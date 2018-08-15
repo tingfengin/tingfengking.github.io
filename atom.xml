@@ -5,9 +5,9 @@
   <subtitle>一个程序媛和一个web狗的成长记</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.twitr.cn/"/>
-  <updated>2018-08-14T14:39:18.230Z</updated>
-  <id>http://www.twitr.cn/</id>
+  <link href="twitr.cn/"/>
+  <updated>2018-08-15T05:48:23.211Z</updated>
+  <id>twitr.cn/</id>
   
   <author>
     <name>听风就是雨</name>
@@ -17,23 +17,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>dlao</title>
-    <link href="http://www.twitr.cn/2018/08/14/dlao/"/>
-    <id>http://www.twitr.cn/2018/08/14/dlao/</id>
-    <published>2018-08-14T14:38:39.000Z</published>
-    <updated>2018-08-14T14:39:18.230Z</updated>
+    <title>test</title>
+    <link href="twitr.cn/2018/08/15/test/"/>
+    <id>twitr.cn/2018/08/15/test/</id>
+    <published>2018-08-15T05:45:54.000Z</published>
+    <updated>2018-08-15T05:48:23.211Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>nihao</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>大家好 这是一个测试！！！哈哈哈<br><a id="more"></a></p><p>你好！！</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;nihao&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      
+      &lt;p&gt;大家好 这是一个测试！！！哈哈哈&lt;br&gt;
     
     </summary>
     
@@ -42,8 +36,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://www.twitr.cn/2018/08/14/hello-world/"/>
-    <id>http://www.twitr.cn/2018/08/14/hello-world/</id>
+    <link href="twitr.cn/2018/08/14/hello-world/"/>
+    <id>twitr.cn/2018/08/14/hello-world/</id>
     <published>2018-08-14T14:29:53.918Z</published>
     <updated>2018-08-14T14:29:53.918Z</updated>
     
