@@ -5,9 +5,9 @@
   <subtitle>一个程序媛和一个web狗的成长记</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://test.twitr.com/"/>
+  <link href="http://www.twitr.cn/"/>
   <updated>2018-08-14T14:39:18.230Z</updated>
-  <id>http://test.twitr.com/</id>
+  <id>http://www.twitr.cn/</id>
   
   <author>
     <name>听风就是雨</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>dlao</title>
-    <link href="http://test.twitr.com/2018/08/14/dlao/"/>
-    <id>http://test.twitr.com/2018/08/14/dlao/</id>
+    <link href="http://www.twitr.cn/2018/08/14/dlao/"/>
+    <id>http://www.twitr.cn/2018/08/14/dlao/</id>
     <published>2018-08-14T14:38:39.000Z</published>
     <updated>2018-08-14T14:39:18.230Z</updated>
     
@@ -42,8 +42,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://test.twitr.com/2018/08/14/hello-world/"/>
-    <id>http://test.twitr.com/2018/08/14/hello-world/</id>
+    <link href="http://www.twitr.cn/2018/08/14/hello-world/"/>
+    <id>http://www.twitr.cn/2018/08/14/hello-world/</id>
     <published>2018-08-14T14:29:53.918Z</published>
     <updated>2018-08-14T14:29:53.918Z</updated>
     
