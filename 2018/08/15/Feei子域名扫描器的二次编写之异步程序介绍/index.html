@@ -85,7 +85,7 @@
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Feei子域名扫描器的二次编写之异步程序介绍">
-<meta property="og:url" content="www.twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/index.html">
+<meta property="og:url" content="https://twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/index.html">
 <meta property="og:site_name" content="听风就是雨🌧️~">
 <meta property="og:description" content="上周，一个月黑风高的夜晚，百无聊赖的打开我的电脑，打算逛一逛大牛们的github，在看到了美丽联合Python大佬编写的子域名扫描器程序后，感觉到了异步框架+协程的强大，之前自己编写的程序没有用到过异步编程，所以打算看一下大牛的程序练练手。首先给大家介绍一下异步编程以及与它息息相关的基本概念，例如：多进程、多线程、协程、同步和异步等，基本知识点。那么先看一下本篇文章目录：  了解异步编程以及紧密相">
 <meta property="og:locale" content="zh-CN">
@@ -122,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="www.twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/"/>
+  <link rel="canonical" href="https://twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/"/>
 
 
 
@@ -256,7 +256,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/">
+    <link itemprop="mainEntityOfPage" href="https://twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="听风就是雨🌧️~">
@@ -298,6 +298,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -490,7 +501,12 @@
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA1NC8xNTU4MQ=="></div>
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -790,6 +806,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://tingfengking.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/';
+          this.page.identifier = '2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/';
+          this.page.title = 'Feei子域名扫描器的二次编写之异步程序介绍';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://tingfengking.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -802,21 +838,6 @@
   
 
 
-
-
-
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
 
 
 

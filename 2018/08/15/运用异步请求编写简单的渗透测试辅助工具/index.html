@@ -84,17 +84,17 @@
 <meta name="description" content="一、简介为了协助渗透测试信息收集的高效进行，开发一些简易的信息收集工具势在必得，现如今编写的很方便高效的工具有很多，所以编写一个工具不能够仅仅实现自己想要的功能，更重要的是优化工具的扫描速度，本次编写工具的背景针对IO密集型请求，采用异步请求方式。下面我们来看一下简单好用的小工具。 二、简单了解Asyncio异步请求我们想象一下下面的情景，如果访问1000个域名网站，并且获取每个网站的标题，如果采">
 <meta property="og:type" content="article">
 <meta property="og:title" content="运用异步请求编写简单的渗透测试辅助工具">
-<meta property="og:url" content="www.twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/index.html">
+<meta property="og:url" content="https://twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/index.html">
 <meta property="og:site_name" content="听风就是雨🌧️~">
 <meta property="og:description" content="一、简介为了协助渗透测试信息收集的高效进行，开发一些简易的信息收集工具势在必得，现如今编写的很方便高效的工具有很多，所以编写一个工具不能够仅仅实现自己想要的功能，更重要的是优化工具的扫描速度，本次编写工具的背景针对IO密集型请求，采用异步请求方式。下面我们来看一下简单好用的小工具。 二、简单了解Asyncio异步请求我们想象一下下面的情景，如果访问1000个域名网站，并且获取每个网站的标题，如果采">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="www.twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/1.png">
-<meta property="og:image" content="www.twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/2.png">
+<meta property="og:image" content="https://twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/1.png">
+<meta property="og:image" content="https://twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/2.png">
 <meta property="og:updated_time" content="2018-08-15T07:05:18.110Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="运用异步请求编写简单的渗透测试辅助工具">
 <meta name="twitter:description" content="一、简介为了协助渗透测试信息收集的高效进行，开发一些简易的信息收集工具势在必得，现如今编写的很方便高效的工具有很多，所以编写一个工具不能够仅仅实现自己想要的功能，更重要的是优化工具的扫描速度，本次编写工具的背景针对IO密集型请求，采用异步请求方式。下面我们来看一下简单好用的小工具。 二、简单了解Asyncio异步请求我们想象一下下面的情景，如果访问1000个域名网站，并且获取每个网站的标题，如果采">
-<meta name="twitter:image" content="www.twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/1.png">
+<meta name="twitter:image" content="https://twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/1.png">
 
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="www.twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/"/>
+  <link rel="canonical" href="https://twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/"/>
 
 
 
@@ -258,7 +258,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/">
+    <link itemprop="mainEntityOfPage" href="https://twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="听风就是雨🌧️~">
@@ -300,6 +300,17 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/08/15/运用异步请求编写简单的渗透测试辅助工具/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -427,7 +438,12 @@
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTA1NC8xNTU4MQ=="></div>
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
 
   
@@ -727,6 +743,26 @@
 
   
 
+    
+      <script id="dsq-count-scr" src="https://tingfengking.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://twitr.cn/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/';
+          this.page.identifier = '2018/08/15/运用异步请求编写简单的渗透测试辅助工具/';
+          this.page.title = '运用异步请求编写简单的渗透测试辅助工具';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://tingfengking.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
 
 
 
@@ -739,21 +775,6 @@
   
 
 
-
-
-
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
 
 
 
