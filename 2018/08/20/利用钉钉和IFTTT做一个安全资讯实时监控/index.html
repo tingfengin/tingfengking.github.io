@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="python," />
+  <meta name="keywords" content="安全,监控," />
 
 
 
@@ -81,18 +81,23 @@
 
 
 
-<meta name="description" content="上周，一个月黑风高的夜晚，百无聊赖的打开我的电脑，打算逛一逛大牛们的github，在看到了美丽联合Python大佬编写的子域名扫描器程序后，感觉到了异步框架+协程的强大，之前自己编写的程序没有用到过异步编程，所以打算看一下大牛的程序练练手。首先给大家介绍一下异步编程以及与它息息相关的基本概念，例如：多进程、多线程、协程、同步和异步等，基本知识点。那么先看一下本篇文章目录：  了解异步编程以及紧密相">
-<meta name="keywords" content="python">
+<meta name="description" content="简介分享一个最近GET到的一个小方法最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了IFTTT  关于IFTTT的介绍： IFTTT，是一个新生的网络服务平台，通过其他不同平台的条件来决定是否执行下一条命令。即对网络服务通过其他网络服务作出反应。IFTTT得名为其口号“if this then that”。  注册企业用户的钉钉注册就不说了，打开PC版钉钉 开启群机器人拿到ap">
+<meta name="keywords" content="安全,监控">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Feei子域名扫描器的二次编写之异步程序介绍">
-<meta property="og:url" content="www.twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/index.html">
+<meta property="og:title" content="利用钉钉和IFTTT做一个安全资讯实时监控">
+<meta property="og:url" content="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/index.html">
 <meta property="og:site_name" content="听风就是雨🌧️~">
-<meta property="og:description" content="上周，一个月黑风高的夜晚，百无聊赖的打开我的电脑，打算逛一逛大牛们的github，在看到了美丽联合Python大佬编写的子域名扫描器程序后，感觉到了异步框架+协程的强大，之前自己编写的程序没有用到过异步编程，所以打算看一下大牛的程序练练手。首先给大家介绍一下异步编程以及与它息息相关的基本概念，例如：多进程、多线程、协程、同步和异步等，基本知识点。那么先看一下本篇文章目录：  了解异步编程以及紧密相">
+<meta property="og:description" content="简介分享一个最近GET到的一个小方法最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了IFTTT  关于IFTTT的介绍： IFTTT，是一个新生的网络服务平台，通过其他不同平台的条件来决定是否执行下一条命令。即对网络服务通过其他网络服务作出反应。IFTTT得名为其口号“if this then that”。  注册企业用户的钉钉注册就不说了，打开PC版钉钉 开启群机器人拿到ap">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-17T02:13:49.040Z">
+<meta property="og:image" content="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/1.png">
+<meta property="og:image" content="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/2.png">
+<meta property="og:image" content="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/3.png">
+<meta property="og:image" content="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/4.png">
+<meta property="og:updated_time" content="2018-08-20T08:29:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Feei子域名扫描器的二次编写之异步程序介绍">
-<meta name="twitter:description" content="上周，一个月黑风高的夜晚，百无聊赖的打开我的电脑，打算逛一逛大牛们的github，在看到了美丽联合Python大佬编写的子域名扫描器程序后，感觉到了异步框架+协程的强大，之前自己编写的程序没有用到过异步编程，所以打算看一下大牛的程序练练手。首先给大家介绍一下异步编程以及与它息息相关的基本概念，例如：多进程、多线程、协程、同步和异步等，基本知识点。那么先看一下本篇文章目录：  了解异步编程以及紧密相">
+<meta name="twitter:title" content="利用钉钉和IFTTT做一个安全资讯实时监控">
+<meta name="twitter:description" content="简介分享一个最近GET到的一个小方法最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了IFTTT  关于IFTTT的介绍： IFTTT，是一个新生的网络服务平台，通过其他不同平台的条件来决定是否执行下一条命令。即对网络服务通过其他网络服务作出反应。IFTTT得名为其口号“if this then that”。  注册企业用户的钉钉注册就不说了，打开PC版钉钉 开启群机器人拿到ap">
+<meta name="twitter:image" content="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/1.png">
 
 
 
@@ -122,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="www.twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/"/>
+  <link rel="canonical" href="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/"/>
 
 
 
 
 
-  <title>Feei子域名扫描器的二次编写之异步程序介绍 | 听风就是雨🌧️~</title>
+  <title>利用钉钉和IFTTT做一个安全资讯实时监控 | 听风就是雨🌧️~</title>
   
 
 
@@ -256,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.twitr.cn/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/">
+    <link itemprop="mainEntityOfPage" href="www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="听风就是雨🌧️~">
@@ -273,7 +278,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Feei子域名扫描器的二次编写之异步程序介绍</h2>
+          <h2 class="post-title" itemprop="name headline">利用钉钉和IFTTT做一个安全资讯实时监控</h2>
         
 
         <div class="post-meta">
@@ -285,8 +290,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-15T15:29:15+08:00">
-                2018-08-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-20T15:47:51+08:00">
+                2018-08-20
               </time>
             
 
@@ -317,7 +322,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  874
+                  247
                 </span>
               
 
@@ -333,7 +338,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  3
+                  1
                 </span>
               
             </div>
@@ -354,69 +359,15 @@
       
 
       
-        <p>上周，一个月黑风高的夜晚，百无聊赖的打开我的电脑，打算逛一逛大牛们的github，在看到了美丽联合Python大佬编写的子域名扫描器程序后，感觉到了<strong>异步框架+协程</strong>的强大，之前自己编写的程序没有用到过<strong>异步编程</strong>，所以打算看一下大牛的程序练练手。首先给大家介绍一下异步编程以及与它息息相关的基本概念，例如：多进程、多线程、协程、同步和异步等，基本知识点。那么先看一下本篇文章目录：</p>
-<ul>
-<li>了解异步编程以及紧密相关的概念，如非阻塞和阻塞、同步和异步、并发和并行等等</li>
-<li>异步编程是什么？以及异步编程的困难之处？</li>
-<li>为什么需要异步编程</li>
-<li>如何从同步阻塞发展到异步非阻塞的？</li>
-<li>掌握epoll + callback + Eventloop 是如何工作的？</li>
-<li>Python是如何逐步从回调到生成器再到原生写成以及支持异步编程的？</li>
-<li>掌握asyncio模块的工作原理？</li>
-</ul>
-<h2 id="一、引入异步编程相关概念"><a href="#一、引入异步编程相关概念" class="headerlink" title="一、引入异步编程相关概念"></a>一、引入异步编程相关概念</h2><p>在介绍异步编程之前，我们最好首先简单的了解一下与异步编程有关的相关基础概念：</p>
-<p><em><strong>阻塞的概念：</strong></em></p>
-<ul>
-<li><p>程序在未得到所需计算资源被挂起的状态</p>
-</li>
-<li><p>程序在等待某个操作完成期间，自身无法继续干别的事情，则称该程序在该操作上是阻塞的</p>
-</li>
-<li><p>常见的阻塞形式有：网络I/O阻塞、磁盘I/O阻塞、用户输入阻塞等等</p>
-</li>
-</ul>
-<p><em><strong>非阻塞的概念：</strong></em></p>
-<ul>
-<li><p>程序在等待某操作过程中，自身不被阻塞，可以继续运行干别的事情，则称该程序在该操作上是非阻塞的</p>
-</li>
-<li><p>非阻塞并不是在任何程序级别、任何情况下都可以存在的</p>
-</li>
-<li><p>仅当程序封装的级别可以囊括独立的子程序单元时，它才可能存在非阻塞状态</p>
-</li>
-</ul>
-<p><em><strong>同步的概念：</strong></em></p>
-<ul>
-<li><p>不同程序单元为了完成某个任务，在执行过程中需靠某种通信方式以协调一致，称这些程序单元是同步执行的。</p>
-</li>
-<li><p>例如购物系统中更新商品库存，需要用“行锁”作为通信信号，让不同的更新请求强制排队顺序执行，那更新库存的操作是同步的。</p>
-</li>
-<li><p>简而言之，同步意味着有序</p>
-</li>
-</ul>
-<p><em><strong>异步的概念：</strong></em></p>
-<ul>
-<li><p>为了完成某个任务，不同程序单元直接过程中无须通信协调，也能够完成任务的方式。</p>
-</li>
-<li><p>简而言之，异步则意味着无序。</p>
-</li>
-</ul>
-<p><em><strong>并发的概念：</strong></em></p>
-<ul>
-<li><p>并发描述的是程序的组织结构。指程序要被设计成多个可独立执行的子任务。</p>
-</li>
-<li><p>以利用有限的计算机资源使多个任务可以被实时或者近实时执行为目的。</p>
-</li>
-</ul>
-<p><em><strong>并行的概念：</strong></em></p>
-<ul>
-<li><p>并行描述的是程序的执行状态。指多个任务同时被执行。</p>
-</li>
-<li><p>以利用富于计算资源加速完成多个任务为目的。</p>
-</li>
-</ul>
-<p><em><strong>异步编程的概念：</strong></em></p>
-<ul>
-<li>以进程、线程、协程、函数方法作为执行任务程序的基本单位，结合回调、事件循环、信号量等机制，以提高程序整体执行效率和并发能力的编程。</li>
-</ul>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>分享一个最近GET到的一个小方法<br><br>最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了<a href="https://ifttt.com/" target="_blank" rel="noopener">IFTTT</a></p>
+<blockquote>
+<p>关于IFTTT的介绍： <br><br>IFTTT，是一个新生的网络服务平台，通过其他不同平台的条件来决定是否执行下一条命令。即对网络服务通过其他网络服务作出反应。IFTTT得名为其口号“if this then that”。</p>
+</blockquote>
+<h2 id="注册企业用户的钉钉"><a href="#注册企业用户的钉钉" class="headerlink" title="注册企业用户的钉钉"></a>注册企业用户的钉钉</h2><p>注册就不说了，打开PC版钉钉 开启群机器人拿到api<br><img src="./1.png" alt=""></p>
+<h2 id="注册IFTTT"><a href="#注册IFTTT" class="headerlink" title="注册IFTTT"></a>注册IFTTT</h2><p>注册成功后，新建一个APPlet：<img src="./2.png" alt=""><br>点击this-&gt;RSS Reed-&gt;New feed item-&gt;添加要订阅的RSS地址-&gt;that-&gt;Webhooks-&gt;Make a web request-&gt;填入API等。<br><img src="./3.png" alt=""><br>效果如下：<br><img src="./4.png" alt=""></p>
+<blockquote>
+<p>推荐一些安全资讯RSS<br><br>Exploit-DB Updates <a href="https://www.exploit-db.com/rss.xml" target="_blank" rel="noopener">https://www.exploit-db.com/rss.xml</a><br><br>Paper <a href="http://paper.seebug.org/rss/" target="_blank" rel="noopener">http://paper.seebug.org/rss/</a><br><br>Sec-News 安全文摘 <a href="https://wiki.ioin.in/atom" target="_blank" rel="noopener">https://wiki.ioin.in/atom</a><br><br>Vulnerability Lab (Index） <a href="https://www.vulnerability-lab.com/rss/rss.php" target="_blank" rel="noopener">https://www.vulnerability-lab.com/rss/rss.php</a><br><br>安全技术社区 <a href="https://xz.aliyun.com/feed" target="_blank" rel="noopener">https://xz.aliyun.com/feed</a></p>
+</blockquote>
 
       
     </div>
@@ -434,7 +385,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+            <a href="/tags/安全/" rel="tag"><i class="fa fa-tag"></i> 安全</a>
+          
+            <a href="/tags/监控/" rel="tag"><i class="fa fa-tag"></i> 监控</a>
           
         </div>
       
@@ -447,8 +400,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/15/运用异步请求编写简单的渗透测试辅助工具/" rel="next" title="运用异步请求编写简单的渗透测试辅助工具">
-                <i class="fa fa-chevron-left"></i> 运用异步请求编写简单的渗透测试辅助工具
+              <a href="/2018/08/15/Feei子域名扫描器的二次编写之异步程序介绍/" rel="next" title="Feei子域名扫描器的二次编写之异步程序介绍">
+                <i class="fa fa-chevron-left"></i> Feei子域名扫描器的二次编写之异步程序介绍
               </a>
             
           </div>
@@ -456,10 +409,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/" rel="prev" title="利用钉钉和IFTTT做一个安全资讯实时监控">
-                利用钉钉和IFTTT做一个安全资讯实时监控 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -634,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、引入异步编程相关概念"><span class="nav-number">1.</span> <span class="nav-text">一、引入异步编程相关概念</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册企业用户的钉钉"><span class="nav-number">2.</span> <span class="nav-text">注册企业用户的钉钉</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册IFTTT"><span class="nav-number">3.</span> <span class="nav-text">注册IFTTT</span></a></li></ol></div>
             
 
           </div>

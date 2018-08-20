@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.twitr.cn/"/>
-  <updated>2018-08-20T08:21:34.000Z</updated>
+  <updated>2018-08-20T08:29:10.000Z</updated>
   <id>www.twitr.cn/</id>
   
   <author>
@@ -17,23 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>利用钉钉和IFTTT做一个安全资讯监控</title>
-    <link href="www.twitr.cn/2018/08/20/%E5%88%A9%E7%94%A8%E9%92%89%E9%92%89%E5%92%8CIFTTT%E5%81%9A%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0%E7%9B%91%E6%8E%A7/"/>
-    <id>www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个文章监控/</id>
+    <title>利用钉钉和IFTTT做一个安全资讯实时监控</title>
+    <link href="www.twitr.cn/2018/08/20/%E5%88%A9%E7%94%A8%E9%92%89%E9%92%89%E5%92%8CIFTTT%E5%81%9A%E4%B8%80%E4%B8%AA%E5%AE%89%E5%85%A8%E8%B5%84%E8%AE%AF%E5%AE%9E%E6%97%B6%E7%9B%91%E6%8E%A7/"/>
+    <id>www.twitr.cn/2018/08/20/利用钉钉和IFTTT做一个安全资讯实时监控/</id>
     <published>2018-08-20T07:47:51.000Z</published>
-    <updated>2018-08-20T08:21:34.000Z</updated>
+    <updated>2018-08-20T08:29:10.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>分享一个最近GET到的一个小方法<br><br>最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了<a href="https://ifttt.com/" target="_blank" rel="noopener">IFTTT</a></p><blockquote><p>关于IFTTT的介绍： <br><br>IFTTT，是一个新生的网络服务平台，通过其他不同平台的条件来决定是否执行下一条命令。即对网络服务通过其他网络服务作出反应。IFTTT得名为其口号“if this then that”。</p></blockquote><h3 id="注册企业用户的钉钉"><a href="#注册企业用户的钉钉" class="headerlink" title="注册企业用户的钉钉"></a>注册企业用户的钉钉</h3><p>注册就不说了，打开PC版钉钉 开启群机器人拿到api<br><img src="./1.png" alt=""></p><h3 id="注册IFTTT"><a href="#注册IFTTT" class="headerlink" title="注册IFTTT"></a>注册IFTTT</h3><p>注册成功后，新建一个APPlet：<img src="./2.png" alt=""><br>点击this-&gt;RSS Reed-&gt;New feed item-&gt;添加要订阅的RSS地址-&gt;that-&gt;Webhooks-&gt;Make a web request-&gt;填入API等。<br><img src="./3.png" alt=""><br>效果如下：<br><img src="./4.png" alt=""></p><blockquote><p>推荐一些安全资讯RSS<br><br>Exploit-DB Updates <a href="https://www.exploit-db.com/rss.xml" target="_blank" rel="noopener">https://www.exploit-db.com/rss.xml</a><br><br>Paper <a href="http://paper.seebug.org/rss/" target="_blank" rel="noopener">http://paper.seebug.org/rss/</a><br><br>Sec-News 安全文摘 <a href="https://wiki.ioin.in/atom" target="_blank" rel="noopener">https://wiki.ioin.in/atom</a><br><br>Vulnerability Lab (Index） <a href="https://www.vulnerability-lab.com/rss/rss.php" target="_blank" rel="noopener">https://www.vulnerability-lab.com/rss/rss.php</a><br><br>安全技术社区 <a href="https://xz.aliyun.com/feed" target="_blank" rel="noopener">https://xz.aliyun.com/feed</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>分享一个最近GET到的一个小方法<br><br>最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了<a href="https://ifttt.com/" target="_blank" rel="noopener">IFTTT</a></p><blockquote><p>关于IFTTT的介绍： <br><br>IFTTT，是一个新生的网络服务平台，通过其他不同平台的条件来决定是否执行下一条命令。即对网络服务通过其他网络服务作出反应。IFTTT得名为其口号“if this then that”。</p></blockquote><h2 id="注册企业用户的钉钉"><a href="#注册企业用户的钉钉" class="headerlink" title="注册企业用户的钉钉"></a>注册企业用户的钉钉</h2><p>注册就不说了，打开PC版钉钉 开启群机器人拿到api<br><img src="./1.png" alt=""></p><h2 id="注册IFTTT"><a href="#注册IFTTT" class="headerlink" title="注册IFTTT"></a>注册IFTTT</h2><p>注册成功后，新建一个APPlet：<img src="./2.png" alt=""><br>点击this-&gt;RSS Reed-&gt;New feed item-&gt;添加要订阅的RSS地址-&gt;that-&gt;Webhooks-&gt;Make a web request-&gt;填入API等。<br><img src="./3.png" alt=""><br>效果如下：<br><img src="./4.png" alt=""></p><blockquote><p>推荐一些安全资讯RSS<br><br>Exploit-DB Updates <a href="https://www.exploit-db.com/rss.xml" target="_blank" rel="noopener">https://www.exploit-db.com/rss.xml</a><br><br>Paper <a href="http://paper.seebug.org/rss/" target="_blank" rel="noopener">http://paper.seebug.org/rss/</a><br><br>Sec-News 安全文摘 <a href="https://wiki.ioin.in/atom" target="_blank" rel="noopener">https://wiki.ioin.in/atom</a><br><br>Vulnerability Lab (Index） <a href="https://www.vulnerability-lab.com/rss/rss.php" target="_blank" rel="noopener">https://www.vulnerability-lab.com/rss/rss.php</a><br><br>安全技术社区 <a href="https://xz.aliyun.com/feed" target="_blank" rel="noopener">https://xz.aliyun.com/feed</a></p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;分享一个最近GET到的一个小方法&lt;br&gt;&lt;br&gt;最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了&lt;a href=&quot;https:
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;分享一个最近GET到的一个小方法&lt;br&gt;&lt;br&gt;最近这段时间一直在忙扫描器，打算用钉钉接口来做预警，发现了&lt;a href=&quot;https:
       
     
     </summary>
     
+    
+      <category term="安全" scheme="www.twitr.cn/tags/%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="监控" scheme="www.twitr.cn/tags/%E7%9B%91%E6%8E%A7/"/>
     
   </entry>
   
